@@ -1,0 +1,13 @@
+version: "2.2"
+services:
+  check-portal:
+    container_name: check-portal
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        - BUILD_TYPE=netbt
+    ports:
+      - '80:80'
+    environment:
+      - API_URL=https://mlpcek.netbt.com/mlpcekapi/
