@@ -8,7 +8,7 @@ ARG BUILD_TYPE
 RUN if ["$BUILD_TYPE" == ""] ; then npm run build ; else npm run build-$BUILD_TYPE; fi
 
 FROM nginx:1.20-alpine as final
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=build /app/dist/ /usr/share/nginx/html/
 
