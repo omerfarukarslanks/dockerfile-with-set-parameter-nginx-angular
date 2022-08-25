@@ -1,7 +1,7 @@
 version: "2.2"
 services:
   check-portal:
-    container_name: check-portal
+    container_name: patates
     build:
       dockerfile: Dockerfile
       context: .
