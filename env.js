@@ -1,1 +1,4 @@
-!function(t){t.env=t.env||{},t.env.API_URL="https://test.com"}(this);
+((n) => {
+    n.env = n.env || {};
+    n.env.API_URL = "";
+})(this);
