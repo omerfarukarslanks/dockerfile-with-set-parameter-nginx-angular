@@ -6,8 +6,8 @@ services:
       dockerfile: Dockerfile
       context: .
       args:
-        - BUILD_TYPE=netbt
+        - BUILD_TYPE=development
     ports:
       - '80:80'
     environment:
-      - API_URL=https://mlpcek.netbt.com/mlpcekapi/
+      - API_URL=https://patates.com/api/
