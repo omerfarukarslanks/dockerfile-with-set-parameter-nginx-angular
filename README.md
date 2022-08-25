@@ -1,4 +1,4 @@
-# dockerfile-with-set-parameter
+# dockerfile-with-set-parameter-nginx-angular
 
 #### docker-compose up -d --build (Running default values)
 #### docker-compose build --build-arg BUILD_TYPE=<build_type>
